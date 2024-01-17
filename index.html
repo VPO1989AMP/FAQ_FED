@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!-- BOOTSTRAP -->
+    <link rel="stylesheet" 
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <title>FAQ BEEPLE-FEDEFEARMA</title>
+    <style>
+        .accordion, .accordion-header{
+            display:grid; 
+            padding:10px;
+        }
+    </style>
+</head> 
 <body>
-    Hola a Todos aaa y a Pedro y a victor
+    <header> <br> </header>
+    <h1> Preguntas y repuestas frecuentes Beeple (FAQ)</h1>
+    <div class="accordion" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Quiero insertar un colaborar en un turno pero no lo encuentro
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                    <li> <strong>Revisar filtros que estas aplicando.</strong> Los filtros del apartado sugerencias, aplican a la búsqueda de trabajadores. Es posible que se estén aplicando filtros que hayas aplicado anteriormente. Para resetear dichos filtros pulsa el botón "Restablecer predeterminado"   </li>
+                    <li> Si tras restablecer los filtros el colaborar sigue sin aparecer puede ser que tenga informado <strong>vacaciones </strong> o que <strong>ya esté insertado en otro turno</strong></li>
+                    <li> El colaborador todavía <strong> no está dado de alta en Beeple</strong></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Por que el trabajador no está dado de alta/baja en beeple?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    Los colaboradores se creen en Beeple a partir de una sincronización con NET4 (Para más información sobre NET4, consulta la pregunta ¿Que es NET4?). Está sincronización<br>
+                    se ejecuta diariamente dónde su función principal es la de crear colaborades que tengan un contrato en curso en Fedefarma.<br>
+                    Los motivos por los cuales un colaborador ya no está dado de alta pueden ser:
+                    <ul>
+                        <li> La sincronización todavía no se ha ejecutado y por lo tanto aun no aparece el colaborador en beeple</li>
+                        <li> El colaborador ya ha finalizado su contrato (según informado en NET4) y el sistema lo ha dado de baja</li>
+                    </ul>
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Qué es NET4?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    NET4 es el sistema de gestión utilizado por GesGrup. En NET4 se crean las altas de los contratos de cada colaborador con el centro de trabajo correspondiente.<br>
+                    NET4 es utilizado para controlar todos los servicios y contratos de GesGrup con cada uno de sus clientes. <br>
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                ¿Cómo puedo ver si un colaborador tiene vacaciones o alguna ausencia?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                    <li> Buscar el colaborador en la lupa situada en la parte superior</li>
+                    <li> En la ficha del colaborador, aparece un calendario. Si alguna fecha aparece en rojo significa que se ha informado de <br>
+                    de algún tipo de disponibilidad. Una disponibilidad es una ausencias planificada como por ejemplo vacaciones.</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Cómo puedo ver si un colaborador tiene vacaciones o alguna ausencia?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                  <li> Buscar el colaborador en la lupa situada en la parte superior</li>
+                  <li> En la ficha del colaborador, aparece un calendario. Si alguna fecha aparece en rojo significa que se ha informado de <br>
+                  de algún tipo de disponibilidad. Una disponibilidad es una ausencias planificada como por ejemplo vacaciones.</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    <footer> <br>  </footer>
 </body>
 </html>
