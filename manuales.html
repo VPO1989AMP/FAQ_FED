@@ -46,15 +46,15 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link" aria-current="page" onclick="cargarPDF()">
+                <a href="#" class="nav-link" aria-current="page" onclick="cargarPDFEvaluacion()">
                     <svg class="bi bi-book" width="16" height="16"><use xlink:href="#home"/></svg>
                     Evaluación de trabajadores
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link" aria-current="page">
+                <a href="#" class="nav-link" aria-current="page" onclick="cargarPDFPlanificación()">
                     <svg class="bi bi-book" width="16" height="16"><use xlink:href="#home"/></svg>
-                    Planificación de turnos
+                    Planificación de Turno
                 </a>
             </li>
         </ul>
@@ -78,9 +78,29 @@
     </div>
 
     <script>
-        function cargarPDF() {
+        function cargarPDFEvaluacion() {
             // URL del PDF en IPFS
             var pdfURL = 'https://ipfs.io/ipfs/QmPesg9MPAW4HaCemmqQwXn5wg3JXFEm5G516FFQZzhy5S?filename=Evaluaci%C3%B3n%20de%20Trabajadores%20.pdf';
+    
+            // Crear un iframe para mostrar el PDF
+            var iframe = document.createElement('iframe');
+            iframe.src = pdfURL;
+            iframe.style.width = '100%';
+            iframe.style.height = '800px'; // Puedes ajustar la altura según tus necesidades
+    
+            // Limpiar el contenido actual antes de cargar el PDF
+            var pdfContainer = document.getElementById('pdf-container');
+            pdfContainer.innerHTML = '';
+    
+            // Agregar el iframe al contenedor
+            pdfContainer.appendChild(iframe);
+        }
+    </script>
+
+    <script>
+        function cargarPDFPlanificación() {
+            // URL del PDF en IPFS
+            var pdfURL = 'https://ipfs.io/ipfs/QmNty4YnDMydw1J1jiKE6gTgu2jU4qbkrTCbapGMG3sSvA?filename=Planificaci%C3%B3n%20Fedefarma.pdf';
 
             // Crear un iframe para mostrar el PDF
             var iframe = document.createElement('iframe');
@@ -96,5 +116,8 @@
             pdfContainer.appendChild(iframe);
         }
     </script>
+
+
+    
 </body>
 </html>

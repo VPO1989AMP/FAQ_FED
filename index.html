@@ -162,5 +162,20 @@
           </div>
       </div>
     <footer> <br>  </footer>
+
+    <script>
+      function solicitarContraseña() {
+          // Solicitar contraseña al usuario
+          var contraseña = prompt("Por favor, ingresa la contraseña:");
+
+          // Verificar si la contraseña ingresada es correcta ("fedefarma1234")
+          if (contraseña === "fedefarma1234") {
+              // Si la contraseña es correcta, redirigir a la página de manuales
+              window.location.href = "pagina_de_manuales.html"; // Reemplaza con la URL de tu página de manuales
+          } else {
+              alert("Contraseña incorrecta. Intenta de nuevo."); // Mostrar un mensaje de error
+          }
+      }
+  </script>
 </body>
 </html>
